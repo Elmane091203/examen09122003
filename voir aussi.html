@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voir aussi</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image" href="logo-mangas.png">
+	<style type="text/css">
+		*{
+			text-decoration: none;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			font-family: cursive;
+			position: none;
+		}
+		body{
+			height: 100%;
+			width: 100%;
+			background-repeat: no-repeat;
+			background: url('black clover.png'),
+			url('Attack-on-Titan-1.png'),
+			url('mha.png'),
+			url('Dragon_Ball_(manga,_anime_comics)_Logo.svg.png'),
+			url('eJXngxDmdPzAABzcLzmtrdbEdbrGrLeN.webp'),
+			url('fairy tail.png'),
+			url('hero.1_3omuo2hkfw46qcpdmfy0q.jpg'),
+			url('maxresdefault.jpg'),
+			url('naruto.png'),
+			url('tokyo ghoul.png');
+			background-attachment: fixed;
+			background-size: 800px 250px;
+		}
+		.nav-barre{
+			width: 100%;
+			background-color: gray;
+			align-items: center;
+			position: fixed;
+		}
+		.nav-barre .max-div{
+			display: flex;
+			width: 98%;
+			background-color : rgba(37,8,186,0.5);
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+			background-color: gray;
+		}
+		.nav-barre .max-div .logo{
+			margin-left: 15px;
+			align-self: center;
+			position: relative;
+		}
+		.nav-barre .max-div .menu li{
+			display: inline-block;
+			margin-right: 15px;
+		}
+		.nav-barre .max-div .menu li .sur{
+			margin-right: 50px;
+		}
+		.nav-barre .max-div .menu li a{
+			color: black;
+			font-size: 25px;
+			font-weight: 900;
+			margin-left: 25px;
+			transition: color 2s;
+		}
+		.nav-barre .max-div .menu li a:hover{
+			color: red; 
+		}
+		.sous{
+			display: none;
+			position: absolute;
+		    color: black;
+		}
+		.menu li:hover .sous{
+			display: block;
+		}
+		.sous li{
+			width: 100%;
+			text-align: center;
+			background-color:gray;
+			color: black;
+			border: 2px solid #bdc3c7;
+		}
+		.detail{
+			display: none;
+			position: absolute;
+			right: 100%;
+			top: auto;
+		    color: black;
+		}
+		.sous li:hover .detail{
+			display: block;
+			align-items: left;
+		}
+		.detail {
+			width: 100%;
+			height: 150%;
+			border-radius: 10%;
+			overflow: auto;
+			position: left;
+			text-align: center;
+			background-color:gray;
+			color: black;
+			border: 2px solid #bdc3c7;
+		}
+		.detail::-webkit-scrollbar { width: 0 !important }
+		.detail .detail_text {
+			text-align: justify;
+			width: 200px;
+		}
+		.detail img{
+			width: 75%;
+			height: 30%;
+			border-radius: 20%;
+			box-shadow: 10px 5px 5px currentColor;
+			margin-top: 2%;
+		}
+		/*************************************************************************************************/
+		.animes{
+			width: 100%;
+			padding-top: 10%;
+			padding-bottom: 2%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.animes .left{
+			margin-left: 10%;
+		}
+		.animes .right{
+			margin-right: 10%;
+		}
+		.animes .mangas div h1{
+			color: purple;
+			position: static;
+		}
+		.animes .mangas div{
+			background-color: gray;
+			border-radius: 10%;
+			width: 96%;
+			height: 45%;
+			color: black;
+			overflow: auto;
+			text-align: justify;
+			margin-left: 2%;
+			margin-top: 2%;
+			margin-right: 2%;
+			margin-bottom: 2%;
+			transition-duration: 2s;
+		}
+		.animes .mangas{
+			background-color: black;
+			border-radius: 10%;
+			width: 500px;
+			height: 450px;
+			margin-left: 10px;
+			margin-top: 10px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			align-content: center;
+			transition-duration: 2s;
+		}
+		.animes .mangas:hover{
+			background-color: red;
+			height: 460px;
+			width: 510px;
+			border-radius: 10% solid gray;
+		}
+		.animes .mangas div:hover{
+			background-color: black;
+			border-radius: 10% solid gray;
+			color: white;
+		}
+
+		.animes .mangas div::-webkit-scrollbar { width: 0 !important }
+
+		.animes .mangas img{
+			border-radius: 100%;
+			width: 80%;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 1%;
+			height: 49%;
+			box-shadow: 10px 5px 5px black;
+			align-self: center;
+		}
+		footer{
+			background: linear-gradient(to right,blue,black,gray);
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			text-shadow: currentColor;
+			color: white;
+			font-size: 25px;
+			font-weight: 500;
+			padding-top: 10px;
+			position: absolute;
+			top: auto;
+		}
+		footer span {
+			color: red;
+			transition-duration: 2s;
+		}
+		footer span :hover{
+			color: #00ec00;
+		}
+	</style>
+</head>
+<body>
+	<header class="nav-barre">
+		<div class="max-div">
+			<div class="logo">
+				<a href="index.html">
+					<img src="logo-mangas (1).png">
+				</a>
+			</div>
+			<ul class="menu">
+				<li>
+					<a href="tokyo ghoul.html">Tokyo Ghoul</a>
+				</li>
+				<li>
+					<a href="mha.html">My Hero Academia</a>
+				</li>
+				<li>
+					<a href="Attack-on-Titan-1.html">Attack on Titan</a>
+				</li>
+				<li>
+					<a class="sur" href="voir aussi.html">Voir aussi</a>
+					<ul class="sous">
+						<li>
+							<a href="http://www.chia-anime.me/episode/one-piece/">One piece</a>
+							<div class="detail">
+								<img src="one pice.png">
+								<div class="detail_text">
+									Il y a bien longtemps, le tristement célèbre Gol D. Roger était le pirate le plus fort et le plus puissant des mers. Alors qu'il était sur le point d'être exécuté, il a révélé qu'il cachait toute sa richesse, y compris le trésor légendaire connu sous le nom de One Piece, sur une île au bout de la Grand Line - une mer perfide et vraiment imprévisible. Monkey D.Luffy est un jeune homme fougueux, énergique et un peu stupide avec un très grand rêve: trouver One Piece et devenir le roi des pirates! Cependant, Luffy n'est pas un garçon ordinaire, car quand il était plus jeune, il a mangé l'un des fruits du diable et a acquis son pouvoir pour devenir un homme en caoutchouc. Maintenant, dans ce grand âge de pirates, Luffy entreprend de rassembler un équipage et de naviguer vers la mer la plus dangereuse du monde afin de pouvoir réaliser son rêve ... et peut-être même son appétit!
+								</div>
+							</div>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.chia-anime.me/episode/fairy-tail/">Fairytail</a>
+							<div class="detail">
+								<img src="fairy tail.png">
+								<div class="detail_text">
+									Lucy est une jeune fille de 17 ans qui veut devenir une mage à part entière. Un jour, en visitant la ville de Harujion, elle rencontre Natsu, un jeune homme qui tombe facilement malade par tout type de transport. Mais Natsu n'est pas n'importe quel enfant ordinaire, il est membre de l'une des guildes de mages les plus infâmes du monde: Fairy Tail.
+								</div>
+							</div>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.chia-anime.me/episode/black-clover-tv/">Black Clover</a>
+							<div class="detail">
+								<img src="black clover.png">
+								<div class="detail_text">
+										Asta et Yuno ont été abandonnés ensemble dans la même église et sont inséparables depuis. En tant qu'enfants, ils se feraient concurrence pour voir qui deviendrait empereur mage.
+								</div>
+							</div>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.chia-anime.me/episode/hunter-x-hunter-2011/">Hunter x Hunter</a>
+							<div class="detail">
+								<img src="hunter x hunter.png">
+								<div class="detail_text">
+									Le jeune Gon rêve de suivre le chemin de son père et de devenir un chasseur, une classe d'élite d'aventuriers aux compétences légendaires. Mais pour obtenir la note, il devra d'abord réussir l'examen de qualification de chasseur extrêmement difficile et dangereux.
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section class="animes">
+		<div class="left">
+			<a target="_blank" href="https://ww1.animesimple.com/series/1598-tokyo-ghoul-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/1598-tokyo-ghoul-anime.html">
+						<img src="1descr.jpg">
+						<div>
+							<center><h1>Tokyo Ghoul</h1>
+							Tokyo est devenue une ville cruelle et impitoyable - un endroit où des créatures vicieuses appelées «goules» côtoient les humains. Les citoyens de cette métropole autrefois grande vivent dans la peur constante de ces sauvages assoiffés de sang et de leur soif de chair humaine. Cependant, la plus grande menace que représentent ces goules est leur dangereuse capacité à se faire passer pour des humains et à se fondre dans la société. Basé sur le manga d'horreur surnaturel le plus vendu de Sui Ishida, Tokyo Ghoul suit Ken Kaneki, un étudiant timide et livresque, qui est instantanément attiré par Rize Kamishiro, un lecteur avide comme lui. Cependant, Rize n'est pas exactement ce qu'elle semble, et cette réunion malheureuse pousse Kaneki dans les profondeurs sombres du monde inhumain des goules. Dans une torsion du destin, Kaneki est sauvé par l'énigmatique serveuse Touka Kirishima, et commence ainsi sa nouvelle, vie secrète en tant que mi-goule / mi-humain qui doit trouver un moyen de s'intégrer dans les deux sociétés. </center>
+						</div>
+					</a>
+				</div>
+			</a>
+			<a target="_blank" href="https://ww1.animesimple.com/series/3186-black-clover-tv-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/3186-black-clover-tv-anime.html">
+						<img src="24_03_2020_21_33_28_2354392.jpg">
+						<div>
+							<center><h1>Black Clover</h1>
+							Asta et Yuno ont été abandonnés dans la même église le même jour. Élevés ensemble comme enfants, ils ont appris à connaître le "Roi Sorcier" - un titre donné au mage le plus fort du royaume - et ont promis qu'ils seraient en compétition les uns contre les autres pour le poste du prochain Roi Sorcier. Cependant, en grandissant, la différence flagrante entre eux est devenue évidente. Alors que Yuno est capable d'utiliser la magie avec un pouvoir et un contrôle incroyables, Asta ne peut pas du tout utiliser la magie et tente désespérément d'éveiller ses pouvoirs en s'entraînant physiquement. Lorsqu'ils atteignent l'âge de 15 ans, Yuno reçoit un spectaculaire Grimoire avec un trèfle à quatre feuilles, tandis qu'Asta ne reçoit rien. Cependant, peu de temps après, Yuno est attaqué par une personne nommée Lebuty, dont le but principal est d'obtenir le Grimoire de Yuno. Asta essaie de combattre Lebuty, mais il est surpassé. Bien que sans espoir et au bord de la défaite, il trouve la force de continuer quand il entend la voix de Yuno. Libérant ses émotions intérieures dans une rage, Asta reçoit un trèfle à cinq feuilles Grimoire, un "trèfle noir" lui donnant assez de puissance pour vaincre Lebuty. Quelques jours plus tard, les deux amis partent dans le monde, cherchant tous deux le même objectif: devenir le roi sorcier!</center>
+						</div>
+					</a>
+				</div>
+			</a>
+			<a target="_blank" href="https://ww1.animesimple.com/series/47-naruto-shippuden-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/47-naruto-shippuden-anime.html">
+						<img src="naruto.png">
+						<div>
+							<center><h1>Naruto Shuppiden</h1>
+							Cela fait deux ans et demi que Naruto Uzumaki a quitté Konohagakure, le village des feuilles cachées, pour un entraînement intense à la suite d'événements qui ont alimenté son désir d'être plus fort. Maintenant, Akatsuki, l'organisation mystérieuse des ninjas d'élite, se rapproche de leur grand plan qui pourrait menacer la sécurité de tout le monde shinobi. Bien que Naruto soit plus âgé et que des événements sinistres se profilent à l'horizon, il a peu changé de personnalité - toujours turbulent et enfantin - bien qu'il soit maintenant beaucoup plus confiant et possède une détermination encore plus grande pour protéger ses amis et sa maison. Quoi qu'il en soit, Naruto poursuivra le combat pour ce qui est important pour lui, même au détriment de son propre corps, dans la suite de la saga sur le garçon qui souhaite devenir Hokage. 
+							</center>
+						</div>
+					</a>
+				</div>
+			</a>
+			<a target="_blank" href="https://ww1.animesimple.com/series/48-one-piece-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/48-one-piece-anime.html">
+						<img src="one pice.png">
+						<div>
+							<center><h1>One piece</h1>
+							Il y a bien longtemps, le tristement célèbre Gol D. Roger était le pirate le plus fort et le plus puissant des mers. Alors qu'il était sur le point d'être exécuté, il a révélé qu'il cachait toute sa richesse, y compris le trésor légendaire connu sous le nom de One Piece, sur une île au bout de la Grand Line - une mer perfide et vraiment imprévisible. Monkey D.Luffy est un jeune homme fougueux, énergique et un peu stupide avec un très grand rêve: trouver One Piece et devenir le roi des pirates! Cependant, Luffy n'est pas un garçon ordinaire, car quand il était plus jeune, il a mangé l'un des fruits du diable et a acquis son pouvoir pour devenir un homme en caoutchouc. Maintenant, dans ce grand âge de pirates, Luffy entreprend de rassembler un équipage et de naviguer vers la mer la plus dangereuse du monde afin de pouvoir réaliser son rêve ... et peut-être même son appétit!
+							</center>
+						</div>
+					</a>
+				</div>
+			</a>
+			<a target="_blank" href="https://voiranime.com/anime/jujutsu-kaisen-vf/">
+				<div class="mangas">
+					<a target="_blank" href="https://voiranime.com/anime/jujutsu-kaisen-vf/">
+						<img src="Jujutsu-Kaisen-banner.jpg">
+						<div>
+							<center><h1>Jujutsu Kaisen</h1>
+							Chaque année au Japon, on recense plus de 10 000 morts inexpliquées et portés disparus.
+
+							Dans la majorité des cas, ce sont les sentiments négatifs des êtres humains qui sont en cause. Souffrance, regrets, humiliation : leur accumulation dans un même endroit provoque des malédictions souvent fatales…
+
+							C’est ce que va découvrir à ses dépens Yuji Itadori, lycéen et membre du club de spiritisme. Il ne croit pas aux fantômes, mais sa force physique hors du commun est un précieux atout pour les missions du groupe… jusqu’à ce que l’une d’elles tourne mal. La relique qu’ils dénichent, le doigt sectionné d’une créature millénaire, attire les monstres ! Le jeune homme n’hésite pas une seconde : il avale la relique pour conjurer le mauvais sort !
+
+							Le voilà possédé par Ryomen Sukuna, le célèbre démon à deux visages. Contre toute attente, Yuji réussit à reprendre le contrôle de son corps. C’est du jamais vu ! Malgré tout, il est condamné à mort par l’organisation des exorcistes… Une sentence qui ne pourra être repoussée qu’à une seule condition : trouver et ingérer tous les doigts de Sukuna afin d’éliminer la menace une fois pour toutes. Et pour ça, l’adolescent va devoir s’initier à l’art occulte et mystérieux de l’exorcisme !
+
+							Monstres assoiffés de sang, combats épiques et magie surpuissante : découvrez la nouvelle bombe dark fantasy ! Au cœur d’une lutte millénaire entre exorcistes et démons, comment garder son humanité alors même que le mal se tapit au plus profond de soi ?</center>
+						</div>
+					</a>
+				</div>
+			</a>
+			<a target="_blank" href="https://ww1.animesimple.com/series/46-bleach-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/46-bleach-anime.html">
+						<img src="OIP (1).jfif">
+						<div>
+							<center><h1>Bleach</h1>
+							Ichigo Kurosaki est un lycéen ordinaire - jusqu'à ce que sa famille soit attaquée par un Hollow, un esprit corrompu qui cherche à dévorer les âmes humaines. C'est alors qu'il rencontre une Soul Reaper nommée Rukia Kuchiki, qui se blesse en protégeant la famille d'Ichigo de l'assaillant. Pour sauver sa famille, Ichigo accepte l'offre de Rukia de prendre ses pouvoirs et devient un Soul Reaper en conséquence. Cependant, comme Rukia est incapable de retrouver ses pouvoirs, Ichigo se voit confier la tâche ardue de traquer les Hollows qui infestent leur ville. Cependant, il n'est pas seul dans son combat, car il est plus tard rejoint par ses amis - camarades de classe Orihime Inoue, Yasutora Sado et Uryuu Ishida - qui ont chacun leurs propres capacités uniques. Alors qu'Ichigo et ses camarades s'habituent à leurs nouvelles fonctions et se soutiennent mutuellement sur et en dehors du champ de bataille, le jeune Soul Reaper apprend bientôt que les Hollows ne sont pas la seule véritable menace pour le monde humain. 
+							</center>
+						</div>
+					</a>
+				</div>
+			</a>
+		</div>
+		<div class="right">
+			<a target="_blank" href="https://ww1.animesimple.com/series/2238-my-hero-academia-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/2238-my-hero-academia-anime.html">
+						<img src="mha.png">
+						<div>
+							<center><h1> My hero Academia</h1>
+							L'apparition de «bizarreries», des super pouvoirs nouvellement découverts, n'a cessé d'augmenter au fil des ans, 80% de l'humanité possédant diverses capacités allant de la manipulation d'éléments au changement de forme. Cela laisse le reste du monde complètement impuissant, et Izuku Midoriya en fait partie. Depuis qu'il est enfant, l'ambitieux collégien n'a voulu rien de plus que d'être un héros. Le sort injuste d'Izuku le laisse admirer les héros et prendre des notes sur eux chaque fois qu'il le peut. Mais il semble que sa persévérance ait porté ses fruits: Izuku rencontre le héros numéro un et son idole personnelle, All Might. La bizarrerie de All Might est une capacité unique qui peut être héritée, et il a choisi Izuku pour être son successeur! Après de nombreux mois de formation exténuante, Izuku s'inscrit à UA High, un lycée prestigieux célèbre pour son excellent programme de formation de héros, et les étudiants de première année de cette année semblent particulièrement prometteurs. Avec ses camarades de classe bizarres mais talentueux et la menace imminente d'une organisation méchante, Izuku apprendra bientôt ce que signifie vraiment être un héros.
+							</center>
+						</div>
+					</a>
+				</div>
+			</a>
+			
+			<a target="_blank" href="https://ww1.animesimple.com/series/1664-the-seven-deadly-sins-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/1664-the-seven-deadly-sins-anime.html">
+						<img src="main-qimg-5c7cfd11a13a894f331086e3187b5da8.png">
+						<div>
+							<center><h1>Seven Deadly Sins</h1>
+							Dans un monde similaire au Moyen Âge européen, les Chevaliers Sacrés de Britannia, redoutés mais vénérés, utilisent une magie extrêmement puissante pour protéger la région de Britannia et ses royaumes. Cependant, un petit sous-ensemble de chevaliers aurait trahi leur patrie et tourné leurs lames contre leurs camarades dans une tentative de renverser le dirigeant de Liones. Ils ont été vaincus par les Chevaliers Saints, mais des rumeurs ont continué à persister que ces chevaliers légendaires, appelés les «Sept Péchés Capitaux», étaient toujours en vie. Dix ans plus tard, les Saints Chevaliers eux-mêmes ont organisé un coup d'État et sont ainsi devenus les nouveaux dirigeants tyranniques du Royaume de Liones. Basé sur la série manga best-seller du même nom, Nanatsu no Taizai suit les aventures d'Elizabeth, la troisième princesse du royaume des Liones, et sa recherche des sept péchés capitaux. Avec leur aide, elle s'efforce non seulement de reprendre son royaume aux saints chevaliers, mais aussi de rechercher la justice dans un monde injuste.
+							</center>
+						</div>
+					</a>
+				</div>
+			</a>
+			
+			<a target="_blank" href="https://ww1.animesimple.com/series/186-hunter-x-hunter-2011-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/186-hunter-x-hunter-2011-anime.html">
+						<img src="hero.1_3omuo2hkfw46qcpdmfy0q.jpg">
+						<div>
+							<center><h1>HUNTER X HUNTER</h1>
+							Hunter x Hunter se déroule dans un monde où les chasseurs existent pour effectuer toutes sortes de tâches dangereuses telles que capturer des criminels et rechercher courageusement des trésors perdus dans des territoires inexplorés. Gon Freecss, 12 ans, est déterminé à devenir le meilleur Chasseur possible dans l'espoir de retrouver son père, qui était lui-même un Chasseur et avait depuis longtemps abandonné son jeune fils. Cependant, Gon se rend vite compte que le chemin pour atteindre ses objectifs est beaucoup plus difficile qu'il n'aurait jamais pu l'imaginer. En chemin pour devenir un chasseur officiel, Gon se lie d'amitié avec le médecin en formation animé Leorio, le vengeur Kurapika et l'ex-assassin rebelle Killua. Pour atteindre leurs propres objectifs et désirs, ils passent tous les quatre le Hunter Exam, réputé pour son faible taux de réussite et sa forte probabilité de décès. Tout au long de leur voyage, Gon et ses amis se lancent dans une aventure qui les met à travers de nombreuses difficultés et luttes. Ils rencontreront une pléthore de monstres, de créatures et de personnages, tout en apprenant ce que signifie vraiment être un chasseur. 
+							</center>
+						</div>
+					</a>
+				</div>
+			</a>
+			<a target="_blank" href="https://ww1.animesimple.com/series/64-fairy-tail-official-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/64-fairy-tail-official-anime.html">
+						<img src="fairy-tail-artwork-rpg.jpg">
+						<div>
+							<center><h1>Fairy Tail</h1>
+							Au pays mystique de Fiore, la magie existe comme un élément essentiel de la vie quotidienne. D'innombrables guildes magiques sont au cœur de toutes les activités magiques et servent de lieux pour les mages partageant les mêmes idées pour se regrouper et répondre aux demandes d'emploi. Parmi eux, Fairy Tail se démarque des autres en tant que lieu de force, d'esprit et de famille. Lucy Heartfilia est une jeune mage à la recherche de clés de porte céleste, et son rêve est de devenir une sorcière à part entière en rejoignant cette célèbre guilde. Dans sa recherche, elle rencontre Natsu Dragneel et son partenaire Happy, qui sont à la recherche du père adoptif de Natsu, le dragon Igneel. Après avoir été trompée par un homme, Lucy tombe sous le coup d'une tentative d'enlèvement, seulement pour être sauvée par Natsu. À sa grande surprise, il révèle qu'il est membre de Fairy Tail et l'invite à les rejoindre. Là, Lucy rencontre les étranges membres de la guilde, comme le magicien des glaces Grey Fullbuster et l'épéiste magique Erza Scarlet. Ensemble en famille, ils combattent les forces du mal, aident ceux qui en ont besoin et se font de nouveaux amis, tout en profitant de l'aventure sans fin qu'est Fairy Tail.
+							</center>
+						</div>
+					</a>
+				</div>
+			</a>
+			
+			<a target="_blank" href="https://ww1.animesimple.com/series/2850-dragon-ball-z-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/2850-dragon-ball-z-anime.html">
+						<img src="Dragon_Ball_(manga,_anime_comics)_Logo.svg.png">
+						<div>
+							<center><h1>DRAGON BALL Z</h1>
+							Cinq ans après avoir remporté le tournoi mondial d'arts martiaux, Gokuu mène désormais une vie paisible avec sa femme et son fils. Cela change, cependant, avec l'arrivée d'un mystérieux ennemi nommé Raditz qui se présente comme le frère perdu depuis longtemps de Gokuu. Il révèle que Gokuu est un guerrier de la race Saiyan autrefois puissante mais maintenant pratiquement éteinte, dont le monde natal a été complètement anéanti. Quand il a été envoyé sur Terre en tant que bébé, le seul but de Gokuu était de conquérir et de détruire la planète; mais après avoir souffert d'amnésie suite à un traumatisme crânien, sa nature violente et sauvage a changé et a plutôt été élevée comme un garçon gentil et bien élevé, se battant maintenant pour protéger les autres. Avec sa tentative ratée de recruter de force Gokuu en tant qu'allié, Raditz avertit les amis de Gokuu d'une nouvelle menace qui `` s approche rapidement de la Terre - une terre qui pourrait plonger la Terre dans un conflit intergalactique et faire trembler les cieux eux-mêmes. Une guerre sera menée contre les sept boules de dragon mystiques, et seuls les plus forts survivront dans Dragon Ball Z.
+							</center>
+						</div>
+					</a>
+				</div>
+			</a>
+			
+			<a target="_blank" href="https://ww1.animesimple.com/series/4926-noblesse-anime.html">
+				<div class="mangas">
+					<a target="_blank" href="https://ww1.animesimple.com/series/4926-noblesse-anime.html">
+						<img src=" noblesse.png">
+						<div>
+							<center><h1>NOBLESSE</h1>
+							Raizel se réveille de son sommeil de 820 ans. Il détient le titre spécial de Noblesse qui est un Noble de sang pur et protecteur de tous les autres Nobles. Dans une tentative de protéger Raizel, son serviteur Frankenstein l'inscrit au lycée Ye-Ran, où Raizel apprend les routines simples et quotidiennes du monde humain à travers ses camarades de classe. Cependant, l'Union - une puissante organisation secrète avec des ficelles dans le monde entier et un objectif de gouverner le monde - envoie des humains modifiés et empiète progressivement sur la vie de Raizel - ce qui l'amène à exercer son puissant pouvoir pour protéger ceux qui l'entourent. Après 820 ans d'intrigues, les secrets de son sommeil sont enfin révélés et la protection absolue de Raizel alors que la Noblesse commence. 
+							</center>
+						</div>
+					</a>	
+				</div>
+			</a>
+		</div>
+	</section>
+</body>
+<footer>
+	<pre>Created by <span>Elmane Djaanffar Houmadi</span>&copy <b>2021</b> Etudiant en <span>Informatique</span></pre>
+</footer>
+</html>

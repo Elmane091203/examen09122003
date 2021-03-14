@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tokyo Ghoul</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image" href="logo-mangas.png">
+	<style type="text/css">
+		*{
+			text-decoration: none;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			font-family: cursive;
+			position: none;
+		}
+		body{
+			animation: defile 15s infinite;
+		}
+		
+		.nav-barre{
+			width: 100%;
+			background-color: gray;
+			align-items: center;
+			position: fixed;
+		}
+		.nav-barre .max-div{
+			display: flex;
+			width: 98%;
+			background-color : rgba(37,8,186,0.5);
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+			background-color: gray;
+		}
+		.nav-barre .max-div .logo{
+			margin-left: 15px;
+			align-self: center;
+			position: relative;
+		}
+		.nav-barre .max-div .menu li{
+			display: inline-block;
+			margin-right: 15px;
+		}
+		.nav-barre .max-div .menu li .sur{
+			margin-right: 50px;
+		}
+		.nav-barre .max-div .menu li a{
+			color: black;
+			font-size: 25px;
+			font-weight: 900;
+			margin-left: 25px;
+			transition: color 2s;
+		}
+		.nav-barre .max-div .menu li a:hover{
+			color: red; 
+		}
+		.sous{
+			display: none;
+			position: absolute;
+		    color: black;
+		}
+		.menu li:hover .sous{
+			display: block;
+		}
+		.sous li{
+			width: 100%;
+			text-align: center;
+			background-color:gray;
+			color: black;
+			border: 2px solid #bdc3c7;
+		}
+		.detail{
+			display: none;
+			position: absolute;
+			right: 100%;
+			top: auto;
+		    color: black;
+		}
+		.sous li:hover .detail{
+			display: block;
+			align-items: left;
+		}
+		.detail {
+			width: 100%;
+			height: 150%;
+			border-radius: 10%;
+			overflow: auto;
+			position: left;
+			text-align: center;
+			background-color:gray;
+			color: black;
+			border: 2px solid #bdc3c7;
+		}
+		.detail::-webkit-scrollbar { width: 0 !important }
+		.detail .detail_text {
+			text-align: justify;
+			width: 200px;
+		}
+		.detail img{
+			width: 75%;
+			height: 30%;
+			border-radius: 20%;
+			box-shadow: 10px 5px 5px currentColor;
+			margin-top: 2%;
+		}
+		/*************************************************************************************************/
+		footer{
+			background: linear-gradient(to right,blue,black,gray);
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			text-shadow: currentColor;
+			color: white;
+			font-size: 25px;
+			font-weight: 500;
+			padding-top: 10px;
+			position: absolute;
+		}
+		footer span {
+			color: red;
+			transition-duration: 2s;
+		}
+		footer span :hover{
+			color: #00ec00;
+		}
+		.home .max-width{
+			background-image: url('tokyo ghoul.png');
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="autrepage.css">
+</head>
+<body>
+	<header class="nav-barre">
+		<div class="max-div">
+			<div class="logo">
+				<a href="index.html">
+					<img src="logo-mangas (1).png">
+				</a>
+			</div>
+			<ul class="menu">
+				<li>
+					<a href="tokyo ghoul.html">Tokyo Ghoul</a>
+				</li>
+				<li>
+					<a href="mha.html">My Hero Academia</a>
+				</li>
+				<li>
+					<a href="Attack-on-Titan-1.html">Attack on Titan</a>
+				</li>
+				<li>
+					<a class="sur" href="voir aussi.html">Voir aussi</a>
+					<ul class="sous">
+						<li>
+							<a href="http://www.chia-anime.me/episode/one-piece/">One piece</a>
+							<div class="detail">
+								<img src="one pice.png">
+								<div class="detail_text">
+									Il y a bien longtemps, le tristement célèbre Gol D. Roger était le pirate le plus fort et le plus puissant des mers. Alors qu'il était sur le point d'être exécuté, il a révélé qu'il cachait toute sa richesse, y compris le trésor légendaire connu sous le nom de One Piece, sur une île au bout de la Grand Line - une mer perfide et vraiment imprévisible. Monkey D.Luffy est un jeune homme fougueux, énergique et un peu stupide avec un très grand rêve: trouver One Piece et devenir le roi des pirates! Cependant, Luffy n'est pas un garçon ordinaire, car quand il était plus jeune, il a mangé l'un des fruits du diable et a acquis son pouvoir pour devenir un homme en caoutchouc. Maintenant, dans ce grand âge de pirates, Luffy entreprend de rassembler un équipage et de naviguer vers la mer la plus dangereuse du monde afin de pouvoir réaliser son rêve ... et peut-être même son appétit!
+								</div>
+							</div>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.chia-anime.me/episode/fairy-tail/">Fairytail</a>
+							<div class="detail">
+								<img src="fairy tail.png">
+								<div class="detail_text">
+									Lucy est une jeune fille de 17 ans qui veut devenir une mage à part entière. Un jour, en visitant la ville de Harujion, elle rencontre Natsu, un jeune homme qui tombe facilement malade par tout type de transport. Mais Natsu n'est pas n'importe quel enfant ordinaire, il est membre de l'une des guildes de mages les plus infâmes du monde: Fairy Tail.
+								</div>
+							</div>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.chia-anime.me/episode/black-clover-tv/">Black Clover</a>
+							<div class="detail">
+								<img src="black clover.png">
+								<div class="detail_text">
+										Asta et Yuno ont été abandonnés ensemble dans la même église et sont inséparables depuis. En tant qu'enfants, ils se feraient concurrence pour voir qui deviendrait empereur mage.
+								</div>
+							</div>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.chia-anime.me/episode/hunter-x-hunter-2011/">Hunter x Hunter</a>
+							<div class="detail">
+								<img src="hunter x hunter.png">
+								<div class="detail_text">
+									Le jeune Gon rêve de suivre le chemin de son père et de devenir un chasseur, une classe d'élite d'aventuriers aux compétences légendaires. Mais pour obtenir la note, il devra d'abord réussir l'examen de qualification de chasseur extrêmement difficile et dangereux.
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section class="home">
+		<div class="max-width">
+			<div class="home-content">
+				<div class="text-1">Tokyo Ghoul</div>
+				<div class="text">Tokyo Ghoul se déroule dans une réalité alternative où des goules , des créatures qui ressemblent à des gens normaux mais ne peuvent survivre qu'en mangeant de la chair humaine, vivent parmi la population humaine en secret, cachant leur vraie nature afin d'échapper aux poursuites des autorités. Les goules ont des pouvoirs, notamment une force accrue et des capacités de régénération - une goule ordinaire produit 4 à 7 fois plus d'énergie cinétique dans ses muscles qu'un humain normal; ils ont aussi plusieurs fois les cellules RC, une cellule qui coule comme le sang et peut devenir solide instantanément. La peau d'une goule est résistante aux armes perforantes ordinaires et possède au moins un organe prédateur spécial appelé kagune ( japonais :赫 子), qu'il peut manifester et utiliser comme arme pendant le combat. Un autre trait distinctif des goules est que lorsqu'elles sont excitées ou affamées, la couleur de leur sclère dans les deux yeux devient noire et leur iris rouge. Cette mutation est connue sous le nom de kakugan (赫 眼, «yeux rouges») .<br>
+				<a target="_blank" href="https://en.wikipedia.org/wiki/Tokyo_Ghoul" class="button-one">voir plus</a></div>
+			</div>
+			<div class="saison">
+				<div class="img">
+					<img src="tokyo-ghoul-season-1.jpg">
+				</div>
+				<div class="text">
+					<h1>Tokyo Ghoul:saison1</h1>
+					Tokyo est devenue une ville cruelle et impitoyable - un endroit où des créatures vicieuses appelées «goules» côtoient les humains. Les citoyens de cette métropole autrefois grande vivent dans la peur constante de ces sauvages assoiffés de sang et de leur soif de chair humaine. Cependant, la plus grande menace que représentent ces goules est leur dangereuse capacité à se faire passer pour des humains et à se fondre dans la société. Basé sur le manga d'horreur surnaturel le plus vendu de Sui Ishida, Tokyo Ghoul suit Ken Kaneki, un étudiant timide et livresque, qui est instantanément attiré par Rize Kamishiro, un lecteur avide comme lui. Cependant, Rize n'est pas exactement ce qu'elle semble et cette réunion malheureuse pousse Kaneki dans les profondeurs sombres du monde inhumain des goules. Dans une torsion du destin, Kaneki est sauvé par l'énigmatique serveuse Touka Kirishima, et commence ainsi sa nouvelle, vie secrète en tant que mi-goule / mi-humain qui doit trouver un moyen de s'intégrer dans les deux sociétés.<a href="https://ww1.animesimple.com/series/1598-tokyo-ghoul-anime.html" target="_blank">Voir la saison</a>
+				</div>
+			</div>
+			<div class="saison">
+				<div class="img">
+					<img src="KA_Tokyo-Ghoul-Root-A_2_Screenshot-Vol.-4_Staffel-Anime_Screenshot_32813_IR7g2d8fA8tynUXQthb5.jpg">
+				</div>
+				<div class="text">
+					<h1>Tokyo Ghoul:saison2</h1>
+					Ken Kaneki en est finalement venu à accepter la partie monstrueuse et avide de chair de lui-même qu'il craignait et méprisait depuis si longtemps. Après avoir échappé à la captivité et à la torture, Kaneki rejoint Aogiri Tree - la très militante organisation de goules qui l'avait enlevé, amenant ses amis à remettre en question son véritable mobile et sa loyauté. Alors que la tension entre le gouvernement et les goules continue d'augmenter, la Commission de Counter Ghoul, l'agence gouvernementale spécialisée dans la lutte contre les goules, a intensifié ses efforts pour purger complètement Tokyo des goules. Cela menace la paix passagère des amis et anciens camarades de Kaneki - les goules du café Anteiku. Conscient de la situation dangereuse, Kaneki fait face à plusieurs batailles qui mettent sa précieuse humanité éphémère en jeu.<a href="https://ww1.animesimple.com/series/1708-tokyo-ghoul-a-anime.html" target="_blank">Voir la saison</a> 
+				</div>
+			</div>
+			<div class="saison">
+				<div class="img">
+					<img src="Tokyo-Ghoul-RE-Visual-Art.jpg">
+				</div>
+				<div class="text">
+					<h1>Tokyo Ghoul:saison3</h1>
+					Deux ans se sont écoulés depuis le raid de la CCG sur Anteiku. Bien que l'atmosphère à Tokyo ait radicalement changé en raison de l'influence accrue de la CCG, les goules continuent de poser un problème car elles ont commencé à faire preuve de prudence, en particulier l'organisation terroriste Aogiri Tree, qui reconnaît la menace croissante de la CCG pour leur existence. La création d'une équipe spéciale, connue sous le nom de Quinx Squad, peut fournir à la CCG l'impulsion dont elle a besoin pour exterminer les résidents indésirables de Tokyo. En tant qu'humains ayant subi une intervention chirurgicale pour utiliser les capacités spéciales des goules, ils participent à des opérations visant à éradiquer les créatures dangereuses. Le chef de ce groupe, Haise Sasaki, est un demi-goule, mi-humain qui a été formé par le célèbre enquêteur de classe spéciale, Kishou Arima. Cependant, il y a plus dans ce jeune homme qu'il n'y paraît, alors que des souvenirs inconnus griffent son esprit, lui rappelant lentement la personne qu'il était.<a href="https://ww1.animesimple.com/series/3501-tokyo-ghoul-re-anime.html" target="_blank">Voir la saison</a> <a href="https://ww1.animesimple.com/series/3749-tokyo-ghoul-re-2nd-season-anime.html" target="_blank">Voir la suite de la saison</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<footer>
+	<pre>Created by <span>Elmane Djaanffar Houmadi</span>&copy <b>2021</b> Etudiant en <span>Informatique</span></pre>
+</footer>
+</html>

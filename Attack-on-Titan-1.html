@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attack on Titan</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image" href="logo-mangas.png">
+	<style type="text/css">
+		*{
+			text-decoration: none;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			font-family: cursive;
+			position: none;
+		}
+		.home .max-width{
+			animation: defile 15s infinite;
+		}
+		
+		.nav-barre{
+			width: 100%;
+			background-color: gray;
+			align-items: center;
+			position: fixed;
+		}
+		.nav-barre .max-div{
+			display: flex;
+			width: 98%;
+			background-color : rgba(37,8,186,0.5);
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+			background-color: gray;
+		}
+		.nav-barre .max-div .logo{
+			margin-left: 15px;
+			align-self: center;
+			position: relative;
+		}
+		.nav-barre .max-div .menu li{
+			display: inline-block;
+			margin-right: 15px;
+		}
+		.nav-barre .max-div .menu li .sur{
+			margin-right: 50px;
+		}
+		.nav-barre .max-div .menu li a{
+			color: black;
+			font-size: 25px;
+			font-weight: 900;
+			margin-left: 25px;
+			transition: color 2s;
+		}
+		.nav-barre .max-div .menu li a:hover{
+			color: red; 
+		}
+		.sous{
+			display: none;
+			position: absolute;
+		    color: black;
+		}
+		.menu li:hover .sous{
+			display: block;
+		}
+		.sous li{
+			width: 100%;
+			text-align: center;
+			background-color:gray;
+			color: black;
+			border: 2px solid #bdc3c7;
+		}
+		.detail{
+			display: none;
+			position: absolute;
+			right: 100%;
+			top: auto;
+		    color: black;
+		}
+		.sous li:hover .detail{
+			display: block;
+			align-items: left;
+		}
+		.detail {
+			width: 100%;
+			height: 150%;
+			border-radius: 10%;
+			overflow: auto;
+			position: left;
+			text-align: center;
+			background-color:gray;
+			color: black;
+			border: 2px solid #bdc3c7;
+		}
+		.detail::-webkit-scrollbar { width: 0 !important }
+		.detail .detail_text {
+			text-align: justify;
+			width: 200px;
+		}
+		.detail img{
+			width: 75%;
+			height: 30%;
+			border-radius: 20%;
+			box-shadow: 10px 5px 5px currentColor;
+			margin-top: 2%;
+		}
+		footer{
+			background: linear-gradient(to right,blue,black,gray);
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			text-shadow: currentColor;
+			color: white;
+			font-size: 25px;
+			font-weight: 500;
+			padding-top: 10px;
+		}
+		footer span {
+			color: red;
+			transition-duration: 2s;
+		}
+		footer span :hover{
+			color: #00ec00;
+		}
+		/*************************************************************************************************/
+		video { 
+		    position: fixed;
+		    top: 50%;
+		    left: 50%;
+		    min-width: 100%;
+		    min-height: 100%;
+		    width: auto;
+		    height: auto;
+		    z-index: -100;
+		    transform: translateX(-50%) translateY(-50%);
+			background: url('WhatsApp Video 2021-03-12 at 20.09.15.mp4') no-repeat;
+			background-size: cover;
+			transition: 1s opacity;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="autrepage.css">
+</head>
+<body>
+	<header class="nav-barre">
+		<div class="max-div">
+			<div class="logo">
+				<a href="index.html">
+					<img src="logo-mangas (1).png">
+				</a>
+			</div>
+			<ul class="menu">
+				<li>
+					<a href="tokyo ghoul.html">Tokyo Ghoul</a>
+				</li>
+				<li>
+					<a href="mha.html">My Hero Academia</a>
+				</li>
+				<li>
+					<a href="Attack-on-Titan-1.html">Attack on Titan</a>
+				</li>
+				<li>
+					<a class="sur" href="voir aussi.html">Voir aussi</a>
+					<ul class="sous">
+						<li>
+							<a href="http://www.chia-anime.me/episode/one-piece/">One piece</a>
+							<div class="detail">
+								<img src="one pice.png">
+								<div class="detail_text">
+									Il y a bien longtemps, le tristement célèbre Gol D. Roger était le pirate le plus fort et le plus puissant des mers. Alors qu'il était sur le point d'être exécuté, il a révélé qu'il cachait toute sa richesse, y compris le trésor légendaire connu sous le nom de One Piece, sur une île au bout de la Grand Line - une mer perfide et vraiment imprévisible. Monkey D.Luffy est un jeune homme fougueux, énergique et un peu stupide avec un très grand rêve: trouver One Piece et devenir le roi des pirates! Cependant, Luffy n'est pas un garçon ordinaire, car quand il était plus jeune, il a mangé l'un des fruits du diable et a acquis son pouvoir pour devenir un homme en caoutchouc. Maintenant, dans ce grand âge de pirates, Luffy entreprend de rassembler un équipage et de naviguer vers la mer la plus dangereuse du monde afin de pouvoir réaliser son rêve ... et peut-être même son appétit!
+								</div>
+							</div>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.chia-anime.me/episode/fairy-tail/">Fairytail</a>
+							<div class="detail">
+								<img src="fairy tail.png">
+								<div class="detail_text">
+									Lucy est une jeune fille de 17 ans qui veut devenir une mage à part entière. Un jour, en visitant la ville de Harujion, elle rencontre Natsu, un jeune homme qui tombe facilement malade par tout type de transport. Mais Natsu n'est pas n'importe quel enfant ordinaire, il est membre de l'une des guildes de mages les plus infâmes du monde: Fairy Tail.
+								</div>
+							</div>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.chia-anime.me/episode/black-clover-tv/">Black Clover</a>
+							<div class="detail">
+								<img src="black clover.png">
+								<div class="detail_text">
+										Asta et Yuno ont été abandonnés ensemble dans la même église et sont inséparables depuis. En tant qu'enfants, ils se feraient concurrence pour voir qui deviendrait empereur mage.
+								</div>
+							</div>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.chia-anime.me/episode/hunter-x-hunter-2011/">Hunter x Hunter</a>
+							<div class="detail">
+								<img src="hunter x hunter.png">
+								<div class="detail_text">
+									Le jeune Gon rêve de suivre le chemin de son père et de devenir un chasseur, une classe d'élite d'aventuriers aux compétences légendaires. Mais pour obtenir la note, il devra d'abord réussir l'examen de qualification de chasseur extrêmement difficile et dangereux.
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+		<section class="home">
+		<div class="max-width">
+			<div class="home-content">
+				<video playsinline autoplay muted loop>
+					<source src="WhatsApp Video 2021-03-12 at 20.09.15.mp4" type="video/mp4">
+				</video>
+				<div class="text-1">Attack on Titan</div>
+				<div class="text">L'intrigue d' Attack on Titan se concentre sur une civilisation à l'intérieur de trois murs, le dernier endroit où les humains vivent encore. Il y a plus de cent ans, l'humanité a été conduite au bord de l'extinction après l'émergence de géants humanoïdes appelés Titans, qui attaquent et mangent les humains à vue. Les derniers vestiges de l'humanité se sont retirés derrière trois murs concentriques et ont connu près d'un siècle de paix. Pour combattre les Titans, l'armée nationale utilise un équipement de mobilité omnidirectionnel, un ensemble de grappins montés sur la taille et une propulsion à essence permettant une immense mobilité en trois dimensions.L'histoire tourne autour d'un garçon nommé Eren Yeager , qui vit dans la ville de Shiganshina, située au bord du mur Maria, le plus extérieur de trois murs circulaires protégeant l'humanité des Titans. En 845, le mur est percé par deux nouveaux types de Titans, nommés le Colossal Titan (ou encore le Colossus) et le Armored Titan. Au cours de l'incident, la mère d'Eren est mangée par un Titan tandis qu'Eren s'échappe. Il jure de se venger de tous les Titans et s'engage dans l'armée avec ses amis d'enfance, Mikasa Ackerman et Armin Arlert.<br><a target="_blank" href="https://en.wikipedia.org/wiki/Attack_on_Titan" class="button-one">voir plus</a></div>
+			<div class="saison">
+				<div class="img">
+					<img src="attack1.png">
+				</div>
+				<div class="text">
+					<h1>Attack on Titan:saison1</h1>
+					Il y a des siècles, l'humanité a été massacrée jusqu'à l'extinction par des créatures humanoïdes monstrueuses appelées titans, forçant les humains à se cacher dans la peur derrière d'énormes murs concentriques. Ce qui rend ces géants vraiment terrifiants, c'est que leur goût pour la chair humaine n'est pas né de la faim mais de ce qui semble être le fruit du plaisir. Pour assurer leur survie, les restes de l'humanité ont commencé à vivre dans des barrières défensives, résultant en cent ans sans une seule rencontre de titan. Cependant, ce calme fragile est bientôt brisé lorsqu'un titan colossal parvient à percer le mur extérieur prétendument imprenable, relançant la lutte pour la survie contre les abominations mangeuses d'hommes. Après avoir été témoin d'une horrible perte personnelle aux mains des créatures envahissantes, Eren Yeager consacre sa vie à leur éradication en s'enrôlant dans le Survey Corps, une unité militaire d'élite qui combat les humanoïdes impitoyables en dehors de la protection des murs. Basé sur le manga primé de Hajime Isayama, Shingeki no Kyojin suit Eren, avec sa sœur adoptive Mikasa Ackerman et son ami d'enfance Armin Arlert, alors qu'ils rejoignent la guerre brutale contre les titans et se précipitent pour découvrir un moyen de les vaincre avant le dernier. les murs sont violés.<a href="https://ww1.animesimple.com/series/1146-attack-on-titan-anime.html" target="_blank">Voir la saison</a>
+				</div>
+			</div>
+			<div class="saison">
+				<div class="img">
+					<img src="attack2.png">
+				</div>
+				<div class="text">
+					<h1>Attack on Titan:saison2</h1>
+					Pendant des siècles, l'humanité a été chassée par des prédateurs géants et mystérieux connus sous le nom de Titans. Trois puissants murs - Wall Maria, Rose et Sheena - ont procuré la paix et la protection à l'humanité pendant plus de cent ans. Cette paix, cependant, a été brisée lorsque le Titan Colosse et le Titan blindé sont apparus et ont détruit le mur le plus extérieur, Wall Maria. Forcée de se retirer derrière Wall Rose, l'humanité a attendu avec impatience que les Titans réapparaissent et détruisent à nouveau leur havre de paix. Dans la saison 2 de Shingeki no Kyojin, Eren Yeager et d'autres membres du 104th Training Corps viennent de commencer à devenir membres à part entière du Survey Corps. Alors qu'ils se préparent à affronter à nouveau les Titans, leurs préparatifs sont interrompus par l'invasion de Wall Rose - mais tout n'est pas comme il semble alors que de plus en plus de mystères sont élucidés. Alors que le Survey Corps court pour sauver le mur, ils en découvrent plus sur les Titans envahisseurs et les sombres secrets de leurs propres membres.<a href="https://ww1.animesimple.com/series/2594-attack-on-titan-season-2-anime.html" target="_blank">Voir la saison</a> 
+				</div>
+			</div>
+			<div class="saison">
+				<div class="img">
+					<img src="attack3.png">
+				</div>
+				<div class="text">
+					<h1>Attack on Titan:saison3</h1>
+					Troisième saison de la série animée Shingeki no Kyojin(reparties en deux parties).<br><a href="https://ww1.animesimple.com/series/3678-shingeki-no-kyojin-season-3-anime.html" target="_blank">Voir la première partie</a><br><a href="https://ww1.animesimple.com/series/4032-attack-on-titan-season-3-part-2-anime.html" target="_blank">Voir la deusième partie</a>
+				</div>
+			</div>
+			<div class="saison">
+				<div class="img">
+					<img src="attack4.png">
+				</div>
+				<div class="text">
+					<h1>Attack on Titan:saison4</h1>
+					Gabi Braun et Falco Grice se sont entraînés toute leur vie pour hériter de l'un des sept titans sous le contrôle de Marley et aider leur nation à éradiquer les Eldiens de Paradis. Cependant, tout comme tout semble bien pour les deux cadets, leur paix est soudainement ébranlée par l'arrivée d'Eren Yeager et des autres membres du Survey Corps. Ayant finalement atteint le sous-sol de la famille Yeager et appris la sombre histoire entourant les titans, le Survey Corps a enfin trouvé la réponse pour laquelle ils se sont si désespérément battus. Avec la vérité maintenant entre leurs mains, le groupe est parti pour le monde au-delà des murs. Dans Shingeki no Kyojin: la saison finale, deux mondes totalement différents se heurtent alors que chaque partie poursuit son propre programme dans la conclusion tant attendue du combat de Paradis pour la liberté.<a href="https://ww1.animesimple.com/series/4984-attack-on-titan-final-season-anime.html" target="_blank">Voir la saison</a>
+				</div>
+			</div>
+		</div>
+
+			</div>
+		</div>
+	</section>
+
+</body>
+<footer>
+	<pre>Created by <span>Elmane Djaanffar Houmadi</span>&copy <b>2021</b> Etudiant en <span>Informatique</span></pre>
+</footer>
+</html>
