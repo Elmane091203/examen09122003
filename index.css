@@ -6,6 +6,10 @@
 	font-family: cursive;
 	position: none;
 }
+body{
+	height: auto;
+	width: auto;
+}
 .nav-barre{
 	width: 100%;
 	background-color: gray;
@@ -15,23 +19,48 @@
 .nav-barre .max-div{
 	display: flex;
 	width: 98%;
-	background-color : rgba(37,8,186,0.5);
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
+	position: relative;#0000008a
 	background-color: gray;
 }
-.nav-barre .max-div .logo{
-	margin-left: 15px;
-	align-self: center;
-	position: relative;
-}
+		.nav-barre .max-div .logo a .t{
+			margin-top: 8%;
+			font-size: 50px;
+		}
+		.nav-barre .max-div .logo a{
+			padding-left: 15px;
+			align-self: center;
+			position: relative;
+			text-align: center;
+			text-shadow: 
+				        1px 1px 1px #0000006e,
+				        1px 2px 1px #0000006e,
+				        1px 3px 1px #0000006e,
+				        1px 4px 1px #0000006e,
+				        1px 5px 1px #0000006e,
+				        1px 6px 1px #0000006e,
+				        1px 7px 1px #0000006e;
+			color: black;
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			transition: color 2s;
+		}
+		.nav-barre .max-div .logo a:hover{
+			color: red;
+		}
 .nav-barre .max-div .menu li{
 	display: inline-block;
 	margin-right: 15px;
 }
 .nav-barre .max-div .menu li .sur{
 	margin-right: 50px;
+}
+.nav-barre .max-div .menu li .sur::after{
+    content: "▼";
+    font-size: 20px;
+    font-weight: 600;
 }
 .nav-barre .max-div .menu li a{
 	color: black;

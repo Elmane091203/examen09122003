@@ -1,6 +1,10 @@
+body{
+	height: auto;
+	width: auto;
+}
+
 .home{
-	height: 100%;
-	background:url('home2.jpg');
+	height: auto;
 	object-fit: cover;
 	display: flex;
 }
@@ -22,7 +26,14 @@
 	font-weight: 600;
 	color: #985ded;
 	text-align: center;
-	text-shadow: 5px 2px red;
+	text-shadow: 
+        1px 1px 1px #CFB565,
+        1px 2px 1px #CFB565,
+        1px 3px 1px #CFB565,
+        1px 4px 1px #CFB565,
+        1px 5px 1px #CFB565,
+        1px 6px 1px #CFB565,
+        1px 7px 1px #CFB565;
 }
 .home .home-content .text{
 	text-transform: unset;
@@ -102,3 +113,35 @@
 100%{background-image:url('tokyo ghoul.png');}
 
 }
+.sur::after{
+    content: "▼";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+		.nav-barre .max-div .logo a .t{
+			margin-top: 8%;
+			font-size: 50px;
+		}
+		.nav-barre .max-div .logo a{
+			padding-left: 15px;
+			align-self: center;
+			position: relative;
+			text-align: center;
+			text-shadow: 
+				        1px 1px 1px #0000006e,
+				        1px 2px 1px #0000006e,
+				        1px 3px 1px #0000006e,
+				        1px 4px 1px #0000006e,
+				        1px 5px 1px #0000006e,
+				        1px 6px 1px #0000006e,
+				        1px 7px 1px #0000006e;
+			color: black;
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			transition: color 2s;
+		}
+		.nav-barre .max-div .logo a:hover{
+			color: red;
+		}

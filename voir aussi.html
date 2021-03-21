@@ -45,10 +45,31 @@
 			position: relative;
 			background-color: gray;
 		}
-		.nav-barre .max-div .logo{
-			margin-left: 15px;
+		.nav-barre .max-div .logo a:hover{
+			color: red;
+		}
+		.nav-barre .max-div .logo a .t{
+			margin-top: 8%;
+			font-size: 50px;
+		}
+		.nav-barre .max-div .logo a{
+			padding-left: 15px;
 			align-self: center;
 			position: relative;
+			text-align: center;
+			text-shadow: 
+				        1px 1px 1px #0000006e,
+				        1px 2px 1px #0000006e,
+				        1px 3px 1px #0000006e,
+				        1px 4px 1px #0000006e,
+				        1px 5px 1px #0000006e,
+				        1px 6px 1px #0000006e,
+				        1px 7px 1px #0000006e;
+			color: black;
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			transition:color 2s;
 		}
 		.nav-barre .max-div .menu li{
 			display: inline-block;
@@ -56,6 +77,11 @@
 		}
 		.nav-barre .max-div .menu li .sur{
 			margin-right: 50px;
+		}
+		.nav-barre .max-div .menu li .sur::after{
+			content: "▼";
+    		font-size: 20px;
+    		font-weight: 600;
 		}
 		.nav-barre .max-div .menu li a{
 			color: black;
@@ -209,11 +235,12 @@
 <body>
 	<header class="nav-barre">
 		<div class="max-div">
-			<div class="logo">
+			<ul class="logo">
 				<a href="index.html">
-					<img src="logo-mangas (1).png">
+					<li><img src="logo-mangas.png"></li>
+					<li class="t">Acceuil</li>
 				</a>
-			</div>
+			</ul>
 			<ul class="menu">
 				<li>
 					<a href="tokyo ghoul.html">Tokyo Ghoul</a>
@@ -228,7 +255,7 @@
 					<a class="sur" href="voir aussi.html">Voir aussi</a>
 					<ul class="sous">
 						<li>
-							<a href="http://www.chia-anime.me/episode/one-piece/">One piece</a>
+							<a target="_blank" href="https://voiranime.com/anime/one-piece-vf/">One piece</a>
 							<div class="detail">
 								<img src="one pice.png">
 								<div class="detail_text">
@@ -237,7 +264,7 @@
 							</div>
 						</li>
 						<li>
-							<a target="_blank" href="http://www.chia-anime.me/episode/fairy-tail/">Fairytail</a>
+							<a target="_blank" href="http://voiranime.com/anime/fairy-tail-vf/">Fairytail</a>
 							<div class="detail">
 								<img src="fairy tail.png">
 								<div class="detail_text">
@@ -246,7 +273,7 @@
 							</div>
 						</li>
 						<li>
-							<a target="_blank" href="http://www.chia-anime.me/episode/black-clover-tv/">Black Clover</a>
+							<a target="_blank" href="http://voiranime.com/anime/black-clover-vf/">Black Clover</a>
 							<div class="detail">
 								<img src="black clover.png">
 								<div class="detail_text">
@@ -255,7 +282,7 @@
 							</div>
 						</li>
 						<li>
-							<a target="_blank" href="http://www.chia-anime.me/episode/hunter-x-hunter-2011/">Hunter x Hunter</a>
+							<a target="_blank" href="http://voiranime.com/anime/hunter-x-hunter-2011-vf/">Hunter x Hunter</a>
 							<div class="detail">
 								<img src="hunter x hunter.png">
 								<div class="detail_text">
